@@ -14,8 +14,8 @@ import { checBoxesBg } from "@/utils/images";
 
 const exampleList = [
   {
-    name: "Stripe Subscriptions Starter",
-    desc: "The all-in-one subscription starter kit for high-performance SaaS applications, powered by Stripe, Supabase, and Vercel.",
+    name: "Sales Pipeline Automation",
+    desc: "Automate your entire sales pipeline with AI-powered lead scoring, follow-ups, and CRM updates using ViewMarket.",
     icons: [
       <NextJsIcon key={0} />,
       <StripeIcon key={1} />,
@@ -23,13 +23,13 @@ const exampleList = [
     ],
   },
   {
-    name: "Next.js Starter",
-    desc: "A Next.js App Router template configured with cookie-based auth using Supabase, TypeScript and Tailwind CSS.",
-    icons: [<NextJsIcon key={0} />, <VercelIcon key={1} />],
+    name: "Customer Support AI Agent",
+    desc: "Deploy an intelligent AI agent that handles customer inquiries 24/7, escalates complex issues, and learns from interactions.",
+    icons: [<NextJsIcon key={0} />, <OpenAIIcon key={1} />],
   },
   {
-    name: "AI Chatbot",
-    desc: "An open-source AI chatbot app template built with Next.js, the Vercel AI SDK, OpenAI, and Supabase.",
+    name: "Marketing Automation Suite",
+    desc: "Complete marketing automation with AI-generated content, social scheduling, email campaigns, and analytics.",
     icons: [
       <NextJsIcon key={0} />,
       <OpenAIIcon key={1} />,
@@ -37,18 +37,18 @@ const exampleList = [
     ],
   },
   {
-    name: "LangChain + Next.js Starter",
-    desc: "Starter template and example use-cases for LangChain projects in Next.js, including chat, agents, and retrieval.",
+    name: "Data Processing Pipeline",
+    desc: "Build intelligent data pipelines that clean, transform, and analyze data automatically with AI-powered insights.",
     icons: [<LangChainIcon key={0} />, <NextJsIcon key={1} />],
   },
   {
-    name: "Flutter User Management",
-    desc: "Get started with Supabase and Flutter by building a user management app with auth, file storage, and database.",
+    name: "HR Onboarding Workflow",
+    desc: "Streamline employee onboarding with automated document collection, training assignments, and team notifications.",
     icons: [<FlutterIcon key={0} />],
   },
   {
-    name: "Expo React Native Starter",
-    desc: "An extended version of create-t3-turbo implementing authentication on both the web and mobile applications.",
+    name: "E-commerce Order Automation",
+    desc: "Automate order processing, inventory updates, shipping notifications, and customer communications seamlessly.",
     icons: [<DenoIcon key={0} />],
   },
 ];

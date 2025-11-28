@@ -20,57 +20,57 @@ import {
 const personList1 = [
   {
     img: person1,
-    name: "@thatguy_tex",
-    desc: "Working with @supabase has been one of the best dev experiences I've had lately. Incredibly easy to set up, great documentation, and so many fewer hoops to jump through than the competition. I definitely plan to use it on any and all future projects.",
+    name: "@techfounder_mike",
+    desc: "Working with @ViewMarket has been transformative for our business. We automated 80% of our manual workflows in just one weekend. The AI agents are incredibly smart and the no-code builder is a game changer!",
   },
   {
     img: person2,
-    name: "@IxoyeDesign",
-    desc: "@supabase is just 🤯 Now I see why a lot of people love using it as a backend for their applications. I am really impressed with how easy it is to set up an Auth and then just code it together for the frontend. @IngoKpp now I see your joy with Supabase #coding #fullstackwebdev",
+    name: "@sarahops_cto",
+    desc: "@ViewMarket is just 🤯 Our team went from spending 40 hours/week on repetitive tasks to just 5 hours. The AI automation is so intuitive, even our non-technical team members can build workflows!",
   },
 ];
 
 const personList2 = [
   {
     img: person3,
-    name: "@varlenneto",
-    desc: "I've been using @supabase for two personal projects and it has been amazing being able to use the power of Postgres and don't have to worry about the backend",
+    name: "@devmarketing_pro",
+    desc: "I've been using @ViewMarket for our marketing automation and it's incredible. The AI agents handle lead scoring, email sequences, and social posting automatically.",
   },
   {
     img: person4,
-    name: "@justinjunodev",
-    desc: "Y'all @supabase + @nextjs is amazing! 🙌 Barely an hour into a proof-of-concept and already have most of the functionality in place. 🤯🤯🤯",
+    name: "@startupjane",
+    desc: "Y'all @ViewMarket + AI agents is amazing! 🙌 Built our entire customer onboarding automation in 2 hours. Our conversion rate jumped 40%! 🤯🤯🤯",
   },
   {
     img: person5,
-    name: "@justinjunodev",
-    desc: "And thanks to @supabase, I was able to go from idea to launched feature in a matter of hours. Absolutely amazing!",
+    name: "@ops_wizard",
+    desc: "Thanks to @ViewMarket, we automated our entire invoice processing workflow. What used to take 3 days now happens in minutes. Absolutely game-changing!",
   },
 ];
 
 const personList3 = [
   {
     img: person6,
-    name: "@damlakoksal",
-    desc: "Contributing to open-source projects and seeing merged PRs gives enormous happiness! Special thanks to @supabase, for giving this opportunity by staying open-source and being junior-friendly✌🏼",
+    name: "@aibuilder_kate",
+    desc: "The AI models in @ViewMarket are next level! We connected GPT-4 to our customer support and now handle 10x more tickets with better satisfaction scores. The future is here!",
   },
   {
     img: person7,
-    name: "@KenTheRogers",
-    desc: "Holy crap. @supabase is absolutely incredible. Most elegant backend as a service I've ever used. This is a dream.",
+    name: "@enterprise_tom",
+    desc: "Holy crap. @ViewMarket is absolutely incredible. Most powerful automation platform I've ever used. The 500+ integrations mean we can connect literally everything!",
   },
 ];
 
 const personList4 = [
   {
     img: person8,
-    name: "@PaoloRicciuti",
-    desc: "Over the course of a few weeks, we migrated 125.000 users (email/pw, Gmail, Facebook, Apple logins) from Auth0 to @supabase and have now completed the migration. I'm just glad the migration is done 😅 Went well, besides a few edge cases (duplicate emails/linked accounts)",
+    name: "@scaleup_founder",
+    desc: "Over the past month, we migrated all our Zapier workflows to @ViewMarket. The AI-powered automation is leagues ahead - smarter triggers, better error handling, and 60% cost savings!",
   },
   {
     img: person9,
-    name: "@saxxone",
-    desc: "Using @supabase I'm really pleased on the power of postgres (and sql in general). Despite being a bit dubious about the whole backend as a service thing I have to say I really don't miss anything. The whole experience feel very robust and secure.",
+    name: "@automation_guru",
+    desc: "Using @ViewMarket I'm blown away by how intelligent the automation is. The AI agents actually learn from our data and improve over time. Enterprise-grade security too. Couldn't ask for more!",
   },
 ];
 

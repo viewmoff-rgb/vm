@@ -4,10 +4,12 @@ const CTASection = () => {
   return (
     <div className="flex flex-col items-center gap-20 px-6 py-32 md:max-w-[768px] lg:max-w-[1024px] lg:px-16 xl:max-w-[1280px] xl:px-20 2xl:max-w-[1536px]">
       <h3 className="text-3xl text-foreground-light  ">
-        Build in a weekend,
+        Automate in minutes,
         <span className="text-foreground"> scale to millions</span>
       </h3>
-      <Button>Start your project</Button>
+      <Button className="bg-gradient-to-r from-purple-600 to-cyan-500 hover:from-purple-700 hover:to-cyan-600">
+        Start Automating Free
+      </Button>
     </div>
   );
 };

@@ -1,9 +1,7 @@
 import React from "react";
 import { X } from "lucide-react";
-import Link from "next/link";
-import Image from "next/image";
 
-import { logoDark } from "@/utils/images";
+import ViewMarketLogo from "@/utils/icons/ViewMarketLogo";
 
 import { Button } from "../ui/button";
 
@@ -11,7 +9,7 @@ const MobileMenu = ({ onClose }: any) => {
   return (
     <div className="fixed inset-0 z-50 bg-card lg:hidden   ">
       <div className="flex h-14 items-center justify-between px-6">
-        <Image className="h-6 w-auto" src={logoDark} alt="Logo" />
+        <ViewMarketLogo size="sm" />
         <Button variant="ghost" size="icon" onClick={onClose}>
           <X />
         </Button>
@@ -33,8 +31,11 @@ const MobileMenu = ({ onClose }: any) => {
         >
           Sign in
         </Button>
-        <Button className="w-full text-xs" size="sm">
-          Start your project
+        <Button
+          className="w-full bg-gradient-to-r from-purple-600 to-cyan-500 text-xs"
+          size="sm"
+        >
+          Start Automating
         </Button>
       </div>
     </div>

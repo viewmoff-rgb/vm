@@ -1,8 +1,16 @@
 /* eslint-disable @typescript-eslint/member-delimiter-style */
 import "./globals.css";
-import { SunIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import { HTMLAttributes, ReactNode } from "react";
+import {
+  Bot,
+  Workflow,
+  Zap,
+  Brain,
+  Sparkles,
+  Shield,
+  Globe,
+} from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -21,12 +29,6 @@ import {
   supabasePosgress,
   vectorImage,
 } from "@/utils/images";
-import DatabaseIcon from "@/utils/icons/feature/DatabaseIcon";
-import AuthenticationIcon from "@/utils/icons/feature/AuthenticationIcon";
-import EdgeIcon from "@/utils/icons/feature/EdgeIcon";
-import StorageIcon from "@/utils/icons/feature/StorageIcon";
-import RealTimeIcon from "@/utils/icons/feature/RealTimeIcon";
-import VectorIcon from "@/utils/icons/feature/VectorIcon";
 
 function FeatureSection() {
   const ListItem = ({
@@ -55,31 +57,31 @@ function FeatureSection() {
           <div className="flex h-fit flex-col items-center justify-between  gap-5 p-7 lg:h-full  lg:w-[50%] lg:items-start ">
             <div className=" flex flex-col items-center gap-5 lg:items-start">
               <Button variant="outline" size="icon" className=" border-none">
-                <DatabaseIcon />
+                <Bot className="h-5 w-5 text-purple-500" />
               </Button>
 
               <CardHeader className="p-0">
                 <CardTitle className=" text-center lg:text-start">
-                  Database
+                  AI Agents
                 </CardTitle>
                 <CardDescription className="text-center lg:text-start">
-                  Every project is a full Postgres database, the world&apos;
-                  most trusted relational database.
+                  Deploy intelligent AI agents that learn, adapt, and automate
+                  complex business processes autonomously.
                 </CardDescription>
               </CardHeader>
             </div>
             <ul className="hidden flex-col gap-1 pb-5 pt-10 lg:block">
               <ListItem>
                 <CheckIcon />
-                100% portable
+                GPT-4 & Claude powered
               </ListItem>
               <ListItem>
                 <CheckIcon />
-                Built-in Auth with RLS
+                Custom training support
               </ListItem>
               <ListItem>
                 <CheckIcon />
-                Easy to extend
+                24/7 autonomous operation
               </ListItem>
             </ul>
           </div>
@@ -87,7 +89,7 @@ function FeatureSection() {
             <figure
               className="inset-0 z-0  lg:absolute"
               role="img"
-              aria-label="Supabase Postgres database visual composition"
+              aria-label="ViewMarket AI Agents visual composition"
             >
               <span className="absolute left-0 right-0 top-24 my-auto flex h-full w-full items-end justify-center md:top-24 lg:bottom-0 lg:left-auto lg:top-0 lg:aspect-square lg:w-auto lg:items-center lg:justify-end">
                 <Image
@@ -108,13 +110,13 @@ function FeatureSection() {
           <div className=" flex flex-col items-center gap-5">
             {" "}
             <Button variant="outline" size="icon" className=" border-none">
-              <AuthenticationIcon />
+              <Workflow className="h-5 w-5 text-cyan-500" />
             </Button>
             <CardHeader className="px-5 py-0 text-center  ">
-              <CardTitle>Authentication</CardTitle>
+              <CardTitle>Workflow Builder</CardTitle>
               <CardDescription className="">
-                Add user sign ups and logins, securing your data with Row Level
-                Security.
+                Design powerful automation workflows with our visual
+                drag-and-drop builder. No coding required.
               </CardDescription>
             </CardHeader>
           </div>
@@ -145,14 +147,14 @@ function FeatureSection() {
         </Card>
         <Card className="group relative col-span-6 flex h-[400px] flex-col items-center gap-5 overflow-clip pt-7 xl:col-span-3">
           <Button variant="outline" size="icon" className=" border-none">
-            <EdgeIcon />
+            <Zap className="h-5 w-5 text-yellow-500" />
           </Button>
           <CardHeader className="z-10 px-5 py-0 text-center  ">
-            <CardTitle>Edge Functions</CardTitle>
+            <CardTitle>500+ Integrations</CardTitle>
 
             <CardDescription className="">
-              Easily write custom code without deploying or scaling servers.
-              Supabase Edge Functions globe
+              Connect with Slack, Salesforce, HubSpot, Google, and 500+ more
+              apps. ViewMarket integrations ecosystem
             </CardDescription>
           </CardHeader>
           <div className="absolute bottom-0 z-0 h-full w-full">
@@ -160,7 +162,7 @@ function FeatureSection() {
             <figure
               className="absolute inset-0 z-0  w-full"
               role="img"
-              aria-label="Supabase Postgres database visual composition"
+              aria-label="ViewMarket integrations visual composition"
             >
               <span className="absolute inset-0 object-cover object-center ">
                 <Image
@@ -174,12 +176,13 @@ function FeatureSection() {
         </Card>
         <Card className="group col-span-6 flex h-[400px] flex-col items-center gap-5  overflow-clip px-7 pt-7 xl:col-span-3">
           <Button variant="outline" size="icon" className=" border-none">
-            <StorageIcon />
+            <Brain className="h-5 w-5 text-pink-500" />
           </Button>
           <CardHeader className="p-0 text-center ">
-            <CardTitle>Storage</CardTitle>
+            <CardTitle>AI Models</CardTitle>
             <CardDescription className="">
-              Store, organize, and serve large files, from videos to images.
+              Access GPT-4, Claude, Gemini, and custom ML models for any
+              automation task.
             </CardDescription>
           </CardHeader>
           <div className="relative  overflow-x-hidden">
@@ -307,13 +310,13 @@ function FeatureSection() {
           />
           <div className=" group z-10 flex h-fit flex-col items-center gap-5 overflow-clip  ">
             <Button variant="outline" size="icon" className=" border-none">
-              <RealTimeIcon />
+              <Sparkles className="h-5 w-5 text-blue-500" />
             </Button>
             <CardHeader className="p-0 text-center ">
-              <CardTitle>Realtime</CardTitle>
+              <CardTitle>Smart Triggers</CardTitle>
               <CardDescription className="">
-                Build multiplayer experiences with realtime data
-                synchronization.
+                Set up intelligent triggers that respond to events, schedules,
+                and conditions in real-time.
               </CardDescription>
             </CardHeader>
           </div>
@@ -322,27 +325,27 @@ function FeatureSection() {
           <div className="flex w-full flex-col  justify-between gap-5 p-7 lg:w-[50%]">
             <div className=" flex flex-col items-center gap-5 lg:items-start">
               <Button variant="outline" size="icon" className=" border-none">
-                <VectorIcon />
+                <Shield className="h-5 w-5 text-green-500" />
               </Button>
 
               <CardHeader className="p-0">
                 <CardTitle className="text-center lg:text-start">
-                  Vector
+                  Enterprise Security
                 </CardTitle>
                 <CardDescription className="text-center lg:max-w-[50%] lg:text-start">
-                  Integrate your favorite ML- models to store, index and search
-                  vector embeddings.
+                  Bank-grade security with SOC2, GDPR compliance, and advanced
+                  encryption for all your automation data.
                 </CardDescription>
               </CardHeader>
             </div>
             <ul className="hidden flex-col gap-2 pb-5 pt-10 lg:flex ">
               <ListItem>
-                <SunIcon className=" h-4 w-4" />
-                OpenAI
+                <Globe className=" h-4 w-4" />
+                SOC2 Certified
               </ListItem>
               <ListItem>
-                <SunIcon className=" h-4 w-4" />
-                Hugging Face
+                <Globe className=" h-4 w-4" />
+                GDPR Compliant
               </ListItem>
             </ul>
           </div>
@@ -350,7 +353,7 @@ function FeatureSection() {
             <figure
               className=" inset-0 z-0  lg:absolute"
               role="img"
-              aria-label="Supabase Postgres database visual composition"
+              aria-label="ViewMarket Enterprise Security visual composition"
             >
               <span className="absolute left-0 right-0 top-24 my-auto flex h-full w-full items-end justify-center md:top-24 lg:bottom-0 lg:left-auto lg:top-0 lg:aspect-square lg:w-auto lg:items-center lg:justify-end">
                 <Image

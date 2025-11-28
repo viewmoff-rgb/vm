@@ -17,26 +17,27 @@ const InstantAPIsSection = () => {
       <div className=" grid grid-cols-12 lg:gap-16 ">
         <div className="col-span-12 pb-8 lg:col-span-5 xl:col-span-5">
           <h3 className=" text-2xl ">
-            Instant APIs that do the hard work for you
+            Powerful APIs that automate everything for you
           </h3>
           <CardDescription className=" pt-5 text-lg text-foreground-light ">
-            We introspect your database to provide APIs instantly. Stop building
-            repetitive CRUD endpoints and focus on your product.
+            ViewMarket provides instant APIs to connect your workflows with any
+            service. Stop building repetitive integrations and focus on growing
+            your business.
           </CardDescription>
           <div className="flex w-full justify-between gap-10 pt-10">
             <div className="flex flex-col gap-2">
-              <h2>TypeScript support</h2>
+              <h2>AI-Powered Actions</h2>
               <CardDescription className="text-base text-foreground-light">
-                Type definitions built directly from your database schema
+                Let AI decide the best actions based on your workflow context
               </CardDescription>
               <CardDescription className="flex items-center  gap-2 pb-5 text-sm text-foreground-light group-hover:text-foreground">
                 Explore more <GraterIcon />
               </CardDescription>
             </div>
             <div className="flex flex-col gap-2">
-              <h2>Install from CDN</h2>
+              <h2>No-Code Builder</h2>
               <CardDescription className="text-base text-foreground-light">
-                Use Supabase in the browser without a build process
+                Build automations visually without writing any code
               </CardDescription>
               <CardDescription className="flex items-center  gap-2 pb-5 text-sm text-foreground-light group-hover:text-foreground">
                 Explore more <GraterIcon />
@@ -45,18 +46,18 @@ const InstantAPIsSection = () => {
           </div>{" "}
           <div className="flex w-full justify-between gap-10 pt-5">
             <div className="flex flex-col gap-2">
-              <h2>Local emulator</h2>
+              <h2>Workflow Testing</h2>
               <CardDescription className="text-base text-foreground-light">
-                Develop locally and push to production when you&apos;re ready{" "}
+                Test your automations before going live with sandbox mode
               </CardDescription>
               <CardDescription className="flex items-center  gap-2 pb-5 text-sm text-foreground-light group-hover:text-foreground">
                 Explore more <GraterIcon />
               </CardDescription>
             </div>
             <div className="flex flex-col gap-2">
-              <h2>Supabase CLI</h2>
+              <h2>ViewMarket CLI</h2>
               <CardDescription className="text-base text-foreground-light">
-                Manage Supabase projects from your local machine
+                Manage your automations from the command line
               </CardDescription>
               <CardDescription className="flex items-center  gap-2 pb-5 text-sm text-foreground-light group-hover:text-foreground">
                 Explore more <GraterIcon />

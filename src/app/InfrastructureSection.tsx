@@ -7,15 +7,15 @@ import { structure1, structure2, structure3 } from "@/utils/images";
 const list = [
   {
     icon: structure1,
-    desc: "Good Tape migrates to Supabase managed Postgres and Authentication and achieves database efficiency and a 60% cost reduction",
+    desc: "TechCorp automates 80% of manual workflows with ViewMarket AI, saving 200+ hours monthly and reducing costs by 60%",
   },
   {
     icon: structure2,
-    desc: "Scaling securely: one million users in 7 months protected with Supabase Auth",
+    desc: "StartupXYZ scales customer support with AI agents, handling 10x more requests with better satisfaction scores",
   },
   {
     icon: structure3,
-    desc: "Mendable.ai switches from Pinecone to Supabase for PostgreSQL vector embeddings",
+    desc: "Enterprise Inc. migrates from Zapier to ViewMarket, achieving smarter automation and 60% cost savings",
   },
 ];
 const InfrastructureSection = () => {
@@ -33,8 +33,8 @@ const InfrastructureSection = () => {
             </span>
           </h3>
           <div className="text-base text-foreground-light">
-            See how Supabase empowers companies of all sizes to accelerate their
-            growth and streamline their work.
+            See how ViewMarket empowers companies of all sizes to automate their
+            operations and accelerate growth with AI.
           </div>
         </div>
         <div className="mx-auto mt-5 grid grid-cols-12 gap-5">

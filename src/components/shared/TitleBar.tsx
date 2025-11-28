@@ -2,7 +2,16 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import Image from "next/image";
-import { ChevronDown, Menu } from "lucide-react";
+import {
+  ChevronDown,
+  Menu,
+  Bot,
+  Workflow,
+  Zap,
+  Brain,
+  Sparkles,
+  Shield,
+} from "lucide-react";
 
 import {
   Menubar,
@@ -10,63 +19,58 @@ import {
   MenubarMenu,
   MenubarTrigger,
 } from "@/components/ui/menubar";
-import { logoDark, structure1, structure2, structure3 } from "@/utils/images";
+import { structure1, structure2, structure3 } from "@/utils/images";
 import GithubIcon from "@/utils/icons/socialMedia/GithubIcon";
-import DatabaseIcon from "@/utils/icons/feature/DatabaseIcon";
-import AuthenticationIcon from "@/utils/icons/feature/AuthenticationIcon";
-import EdgeIcon from "@/utils/icons/feature/EdgeIcon";
-import StorageIcon from "@/utils/icons/feature/StorageIcon";
-import RealTimeIcon from "@/utils/icons/feature/RealTimeIcon";
-import VectorIcon from "@/utils/icons/feature/VectorIcon";
+import ViewMarketLogo from "@/utils/icons/ViewMarketLogo";
 
 import { Button } from "../ui/button";
 
-import MobileMenu from "./MobileMenu"; // Create this component
+import MobileMenu from "./MobileMenu";
 
 const list = [
   {
     icon: structure1,
-    desc: "Good Tape migrates to Supabase managed Postgres and Authentication and achieves database efficiency and a 60% cost reduction",
+    desc: "TechCorp automates 80% of manual workflows with ViewMarket AI, saving 200+ hours monthly",
   },
   {
     icon: structure2,
-    desc: "Scaling securely: one million users in 7 months protected with Supabase Auth",
+    desc: "StartupXYZ scales customer support with AI agents, handling 10x more requests",
   },
   {
     icon: structure3,
-    desc: "Mendable.ai switches from Pinecone to Supabase for PostgreSQL vector embeddings",
+    desc: "Enterprise Inc. reduces operational costs by 60% using ViewMarket automation",
   },
 ];
 const menuItems = [
   {
-    icon: <DatabaseIcon />,
-    title: "Database",
-    description: "Fully portable Postgres database",
+    icon: <Bot className="h-5 w-5 text-purple-500" />,
+    title: "AI Agents",
+    description: "Intelligent automation assistants",
   },
   {
-    icon: <AuthenticationIcon />,
-    title: "Authentication",
-    description: "User Management out of the box",
+    icon: <Workflow className="h-5 w-5 text-cyan-500" />,
+    title: "Workflow Builder",
+    description: "Visual automation designer",
   },
   {
-    icon: <StorageIcon />,
-    title: "Storage",
-    description: "Serverless storage for any media",
+    icon: <Zap className="h-5 w-5 text-yellow-500" />,
+    title: "Integrations",
+    description: "Connect 500+ apps seamlessly",
   },
   {
-    icon: <EdgeIcon />,
-    title: "Edge Functions",
-    description: "Deploy code globally on the edge",
+    icon: <Brain className="h-5 w-5 text-pink-500" />,
+    title: "AI Models",
+    description: "GPT-4, Claude & custom models",
   },
   {
-    icon: <RealTimeIcon />,
-    title: "Realtime",
-    description: "Synchronization and Broadcast event",
+    icon: <Sparkles className="h-5 w-5 text-blue-500" />,
+    title: "Smart Triggers",
+    description: "Event-driven automation",
   },
   {
-    icon: <VectorIcon />,
-    title: "Vector",
-    description: "AI toolkit to manage embeddings.",
+    icon: <Shield className="h-5 w-5 text-green-500" />,
+    title: "Enterprise Security",
+    description: "SOC2 & GDPR compliant",
   },
 ];
 
@@ -79,12 +83,12 @@ const resources = [
 ];
 const blog = [
   {
-    title: "Postgres Realtime location sharing with MapLibre",
-    desc: "Use Supabase Realtime to draw live location data onto the map with MapLibre GL JS.",
+    title: "Building AI Agents That Actually Work",
+    desc: "Learn how to create reliable AI automation workflows that handle complex business processes.",
   },
   {
-    title: "Generate Vector Tiles with PostGIS",
-    desc: "Use PostGIS to programmatically generate Mapbox Vector Tiles and render them with MapLibre GL.",
+    title: "The Future of No-Code AI Automation",
+    desc: "Discover how ViewMarket is revolutionizing business automation with intelligent AI agents.",
   },
 ];
 const CustomerStoryItem = ({ logo, title }: any) => (
@@ -118,11 +122,7 @@ const TitleBar = () => {
               type="button"
               href="/"
             >
-              <Image
-                className="z-0 h-6 w-auto  object-cover "
-                src={logoDark}
-                alt=""
-              />
+              <ViewMarketLogo size="sm" />
             </a>
 
             <div className="hidden lg:flex">
@@ -173,12 +173,12 @@ const TitleBar = () => {
 
                         <div>
                           <h3 className="mb-4 text-sm font-semibold text-gray-500">
-                            COMPARE SUPABASE
+                            COMPARE VIEWMARKET
                           </h3>
                           <div className="space-y-2">
-                            <ComparisonLink text="Supabase vs Firebase" />
-                            <ComparisonLink text="Supabase vs Heroku Postgres" />
-                            <ComparisonLink text="Supabase vs Auth0" />
+                            <ComparisonLink text="ViewMarket vs Zapier" />
+                            <ComparisonLink text="ViewMarket vs Make" />
+                            <ComparisonLink text="ViewMarket vs n8n" />
                           </div>
                         </div>
                       </div>
@@ -298,7 +298,7 @@ const TitleBar = () => {
             <Button size="xs" variant="outline">
               Sign in
             </Button>
-            <Button size="xs">Start your project</Button>
+            <Button size="xs">Start Automating</Button>
             {/* <ModeToggle /> */}
           </div>
           <Button
